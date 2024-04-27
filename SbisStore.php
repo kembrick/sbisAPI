@@ -19,6 +19,8 @@ class SbisStore
     }
 
     /**
+     * Аутентификация и сохранение токена
+     *
      * @param string $appClientId
      * @param string $appSecret
      * @param string $secretKey
@@ -39,6 +41,8 @@ class SbisStore
     }
 
     /**
+     * Запрос к API СБИС
+     *
      * @param string $url
      * @param array $postData
      * @return mixed
@@ -83,10 +87,13 @@ class SbisStore
     }
 
     /**
+     * Запрос к API с параметрами, передаваемыми в URL
+     *
+     * @param string $url
      * @return mixed
      * @throws Exception
      */
-    public function getDataByUrl($url)
+    public function getDataByUrl(string $url)
     {
         return $this->query($url);
     }

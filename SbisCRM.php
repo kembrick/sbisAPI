@@ -27,7 +27,7 @@ class SbisCRM
      * @return void
      * @throws Exception
      */
-    private function authenticateByPass(string $login, string $password): void
+    private function authenticateByPass(string $login, string $password)
     {
         $params = [
             'Параметр' => [
